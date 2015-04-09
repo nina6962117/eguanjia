@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:background="@drawable/gsmh"
+    >
+
+
+    
+    <Button
+        android:id="@+id/bcw"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="财务管理" 
+        android:background="#00000000"/>
+        
+    <Button
+        android:id="@+id/bkc"
+        android:layout_marginTop="50dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="课程管理"
+        android:background="#00000000"/>
+        
+    <Button
+        android:id="@+id/bjk"
+        android:layout_marginTop="50dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="健康管理"
+        android:background="#00000000"/>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="设置"
+        android:background="#00000000" />
+
+</LinearLayout>

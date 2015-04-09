@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android1:id="@+id/textView1"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignParentLeft="true"
+        android1:layout_alignParentTop="true"
+        android1:layout_marginLeft="21dp"
+        android1:layout_marginTop="37dp"
+        android1:text="名称" />
+
+    <EditText
+        android1:id="@+id/editText1"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignBottom="@+id/textView1"
+        android1:layout_alignParentRight="true"
+        android1:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <RadioGroup
+        android1:id="@+id/radioGroup1"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignLeft="@+id/textView1"
+        android1:layout_below="@+id/textView1"
+        android1:layout_marginLeft="23dp"
+        android1:layout_marginTop="26dp" >
+
+        <RadioButton
+            android1:id="@+id/radio0"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+           
+            android1:text="收   入" />
+
+        <RadioButton
+            android1:id="@+id/radio1"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:text="支   出" />
+
+    
+    </RadioGroup>
+
+    <TextView
+        android1:id="@+id/textView3"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignBaseline="@+id/textView2"
+        android1:layout_alignBottom="@+id/textView2"
+        android1:layout_marginLeft="42dp"
+        android1:layout_toRightOf="@+id/radioGroup1"
+        android1:text="日期" />
+
+    <TextView
+        android1:id="@+id/textView2"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignLeft="@+id/radioGroup1"
+        android1:layout_below="@+id/radioGroup1"
+        android1:layout_marginTop="35dp"
+        android1:text="时间" />
+
+    <EditText
+        android1:id="@+id/editText2"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignBaseline="@+id/textView4"
+        android1:layout_alignBottom="@+id/textView4"
+        android1:layout_alignParentRight="true"
+         android:numeric="decimal"
+        android1:ems="10" />
+
+    <EditText
+        android1:id="@+id/editText3"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignBottom="@+id/textView5"
+        android1:layout_alignLeft="@+id/editText2"
+        android1:ems="10" />
+
+    <TextView
+        android1:id="@+id/textView4"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignLeft="@+id/textView1"
+        android1:layout_centerVertical="true"
+        android1:text="额度" />
+
+    <TextView
+        android1:id="@+id/textView5"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignLeft="@+id/textView4"
+        android1:layout_below="@+id/editText2"
+        android1:layout_marginTop="44dp"
+        android1:text="取消" />
+
+    <Button
+        android1:id="@+id/button1"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignLeft="@+id/textView2"
+        android1:layout_below="@+id/editText3"
+        android1:layout_marginTop="53dp"
+        android1:text="保存" />
+
+    <Button
+        android1:id="@+id/button2"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignBaseline="@+id/button1"
+        android1:layout_alignBottom="@+id/button1"
+        android1:layout_alignLeft="@+id/textView3"
+        android1:text="取消" />
+
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+     <PreferenceCategory  
+            android:title="课程提醒服务">  
+        <CheckBoxPreference  
+                android:key="checkbox_preference"  
+                android:title="课程提醒"  
+                android:summary="每天上午提醒当日课程" />  
+    </PreferenceCategory>  
+  
+ 
+    <PreferenceCategory  
+            android:title="消费提醒服务">  
+        <CheckBoxPreference  
+                android:key="parent_checkbox_preference"  
+                android:title="消费提醒"  
+                android:summary="消费超过一定数额提醒" />  
+        <EditTextPreference  
+                android:key="child_checkbox_preference"  
+                android:dependency="parent_checkbox_preference"  
+                android:layout="?android:attr/preferenceLayoutChild"  
+                android:title="输入消费提醒限额"  
+                android:summary="若超过该数额，系统会提醒"
+                android:numeric="integer" />  
+    </PreferenceCategory>  
+
+</PreferenceScreen>

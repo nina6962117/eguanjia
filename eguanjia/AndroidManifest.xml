@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.eguanjia"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="9" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".welcomeActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CaiwuList"
+            android:label="财务列表" >
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="财务列表" >
+        </activity>
+        <activity
+            android:name=".guanjiapager"
+            android:label="课程表" >
+        </activity>
+        <activity
+            android:name=".cardkcb"
+            android:label="课程表" >
+        </activity>
+        <activity
+            android:name=".Addcw"
+            android:label="@string/title_activity_addcw" >
+        </activity>
+        <activity
+            android:name=".SettingActivity"
+            android:label="@string/title_activity_setting" >
+        </activity>
+        <service android:name=".kcService"></service>
+    </application>
+
+</manifest>
